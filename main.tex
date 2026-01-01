@@ -1,0 +1,120 @@
+\documentclass[10pt,letterpaper]{article}
+
+\usepackage[margin=0.7in]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage{libertinus}
+\usepackage[hidelinks]{hyperref}
+
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage{tabularx}
+\usepackage{microtype}
+
+\pagenumbering{gobble}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0pt}
+
+\hyphenpenalty=10000
+\exhyphenpenalty=10000
+\sloppy
+
+\titleformat{\section}{\bfseries\large}{}{0pt}{}[\titlerule]
+\titlespacing*{\section}{0pt}{6pt}{4pt}
+
+\setlist[itemize]{leftmargin=1.25em, noitemsep, topsep=2pt, partopsep=0pt, parsep=0pt}
+\renewcommand{\labelitemi}{\textbullet}
+
+\newcommand{\twoColHeading}[4]{
+\begin{tabularx}{\textwidth}{@{}X r@{}}
+\textbf{#1} & #2 \\
+\textit{#3} & \textit{#4} \\
+\end{tabularx}\vspace{-6pt}
+}
+
+\newcommand{\eduBlock}[4]{
+\begin{tabularx}{\textwidth}{@{}X r@{}}
+\textbf{#1} & #2 \\
+#3 & #4 \\
+\end{tabularx}\vspace{-2pt}
+}
+
+\begin{document}
+
+\begin{center}
+    {\LARGE \textbf{JASON WRZESIEN}}\\[3pt]
+    (770) 742-1701 \;\textbullet\;
+    \href{mailto:wrzesienjason@gmail.com}{wrzesienjason@gmail.com} \;\textbullet\;
+    1795 Laurel Creek Trl SE, Smyrna, GA 30080\\[2pt]
+    \href{https://www.linkedin.com/in/jason-wrzesien/}{https://www.linkedin.com/in/jason-wrzesien/}
+\end{center}
+\vspace{-6pt}
+
+\section*{EDUCATION}
+\eduBlock
+{Georgia Institute of Technology, College of Computing}{Atlanta, GA}
+{Bachelor of Science in Computer Science}{June 2022 -- December 2026}
+
+\section*{PROFESSIONAL EXPERIENCE}
+
+\twoColHeading
+{Qu}{Atlanta, GA}
+{Software Engineer Intern}{May 2025 -- Aug 2025}
+\vspace{2pt}
+\begin{itemize}
+  \item Developed and maintained full-stack features for a production-scale web application using Nuxt, .NET, and MongoDB
+  \item Participated in agile development workflows including sprint planning, code reviews, and stand-up meetings to support iterative delivery and team collaboration
+  \item Developed an AI-powered feature including the integration of RESTful APIs and a vector database to generate menu items based on a name or prompt
+\end{itemize}
+
+\vspace{2pt}
+
+\twoColHeading
+{Quuri}{Atlanta, GA}
+{Co-Founder, Head of Engineering \& Operations}{May 2024 -- Present}
+\vspace{2pt}
+\begin{itemize}
+  \item Founded and launched Quuri, an online forum designed to enable collaboration and knowledge sharing among researchers across various domains and institutions globally. Funded by Fusen World, a startup accelerator that supports student entrepreneurs
+  \item Engineered a full-stack web application using ReactJS, MySQL, and Google Cloud Platform services; version control managed through GitHub. Currently in the MVP BETA testing phase
+  \item Co-led business planning, market analysis, user studies and research, data collection, site design, project management, pitch presentations, and customer acquisition
+\end{itemize}
+
+\vspace{2pt}
+
+\section*{RESEARCH}
+
+\twoColHeading
+{LLM Island Migration}{Georgia Institute of Technology}
+{Junior Design Capstone}{August 2024 -- Present}
+\vspace{2pt}
+\begin{itemize}
+  \item Island Migration Evolution is based on having various environments where individuals can evolve, where each island is an individual representing a code file; after a certain number of generations, individuals swap to different islands with different conditions
+  \item Gained experience with platforms such as Hugging Face, setting up Anaconda environments, and using Python libraries like Pandas, PyTorch, and TensorFlow, as well as LLMs such as Llama, Gemini, Qwen, and DeepSeek
+\end{itemize}
+
+\vspace{2pt}
+
+\section*{CAMPUS INVOLVEMENT}
+
+\twoColHeading
+{Officer \& Instructor  \textit{iOS Club}}{Georgia Institute of Technology}
+{iOS Club}{August 2024 -- December 2025}
+\vspace{2pt}
+\begin{itemize}
+  \item Organized and led bootcamp sessions for new club members unfamiliar with Xcode and Swift, teaching them how to work in a project environment which includes using Git, diagramming, project design, and team communication
+  \item Worked on an app called \textit{Loop}, a social media fitness app designed to challenge friends to exercise more, built using Swift, Firebase, Firestore, and Git. Personally implemented most of the UI for one of the three core features and the database functionality to connect Firestore to the codebase
+  \item Worked on a mobile party game app connecting devices by Bluetooth, built using Swift, Git, and iOS app kits
+\end{itemize}
+
+\vspace{2pt}
+
+\section*{SKILLS}
+\begin{tabularx}{\textwidth}{@{}l X@{}}
+\textbf{Programming:} &
+Java, Node.js, Python, C, Swift, SwiftUI, HTML, CSS, MySQL, Bash, Git \\
+\textbf{Concepts:} &
+Object-Oriented Programming, Data Structures \& Algorithms, Machine Learning, Discrete Mathematics, Algorithm Design \& Analysis, Systems \& Networks, Linear Algebra, Calculus \\
+\textbf{Software:} &
+Google Cloud Console, Microsoft Office 365, VSCode, Xcode, MongoDB, .NET, JetBrains Tools, Azure, Jira, Confluence, Copilot, Cursor \\
+\end{tabularx}
+
+\end{document}
